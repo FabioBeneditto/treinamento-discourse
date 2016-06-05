@@ -1,0 +1,130 @@
+* {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Fira Sans";
+  color: rgba(0,0,0,.6);
+}
+
+h1 {
+  background-color: #2B488E;
+  color: white;
+  padding: 10px 5px;
+  font-family: "Fira Sans";
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  color: #2B488E;
+  padding: 0;
+  font-family: "Fira Sans";
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  border-bottom: solid 2px #c9d4ef;
+  font-style: italic;
+}
+
+/*h2 + ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 10px 0 30px 0;
+}
+
+h2 + ul li {
+  list-style-type: none;
+  flex: 1;
+  margin: 10px 0;
+
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+    background: #c9d4ef;
+}
+
+h2 + ul li a {
+
+    display: block;
+    padding: 10px 14px;
+
+    border-radius: 2px;
+    color: #2B488E;
+    text-decoration: none;
+
+    flex: 1;
+
+}*/
+.boxes {
+  border: dashed #c9d4ef 2px;
+  padding: 10px;
+  margin: 15px 0 30px 0;
+  position: relative;
+
+}
+
+.boxes:after {
+  content: "Box List";
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  padding: 3px 5px;
+  text-align: right;
+  color: white;
+  font-size: 12px;
+  background: #c9d4ef;
+  display: none;
+}
+
+ul.boxes {
+  padding: 10px;
+  list-style-type: none;
+  margin: 15px 0 30px 0;
+}
+
+ul.boxes li {
+  list-style-type: none;
+  flex: 1;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+    background: #c9d4ef;
+}
+
+ul.boxes li:last-child {
+  margin: 0;
+}
+
+ul.boxes li a {
+
+    display: block;
+    padding: 10px 14px;
+
+    border-radius: 2px;
+    color: #2B488E;
+    text-decoration: none;
+
+    flex: 1;
+
+}
+
+.etherpad {
+/*  background: white;*/
+  padding: 5px 5px 3px 5px;
+  border: solid 10px #eee;
+  border-width: 10px 10px 10px 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.etherpad:after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/etherpad-logo.png);
+  background-size: 30px;
+  background-position: center;
+  top: 5px;
+  left: -30px;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+}
